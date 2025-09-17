@@ -2,3 +2,6 @@
 /PROGRAMACION_2/ejercicios_tp/build/
 /PROGRAMACION_2/ejercicios_tp/dist/
 /PROGRAMACION_2/ejercicios_tp/nbproject/private/
+
+# macOS
+.DS_Store
