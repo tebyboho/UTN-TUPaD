@@ -1,7 +1,11 @@
-/PROGRAMACION_2/ejercicio_3/dist/
-/PROGRAMACION_2/ejercicios_tp/build/
-/PROGRAMACION_2/ejercicios_tp/dist/
-/PROGRAMACION_2/ejercicios_tp/nbproject/private/
-
 # macOS
 .DS_Store
+/PROGRAMACION_2/01_introduccion_a_java/nbproject/private/
+/PROGRAMACION_2/02_programacion_estructurada/build/
+/PROGRAMACION_2/02_programacion_estructurada/nbproject/private/
+/PROGRAMACION_2/03_introduccion_poo_en_java/build/
+/PROGRAMACION_2/03_introduccion_poo_en_java/nbproject/private/
+/PROGRAMACION_2/04_poo/build/
+/PROGRAMACION_2/04_poo/nbproject/private/
+/PROGRAMACION_2/05_UML/build/
+/PROGRAMACION_2/05_UML/nbproject/private/
