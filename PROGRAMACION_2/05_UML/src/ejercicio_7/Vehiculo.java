@@ -33,16 +33,11 @@ public class Vehiculo {
     // establecer conductor (bidireccional) - mantenido por Vehiculo
     public void setConductor(Conductor conductor) {
         this.conductor = conductor;
-        // no hay enlace inverso en Conductor en este modelo; si lo hubiera, lo mantendríamos aquí
-    }
-
-    // establecer motor y mantener la bidireccionalidad con Motor
-    public void setMotor(Motor motor) {
-        this.motor = motor;
-        if (motor != null && motor.getVehiculo() != this) {
-            motor.setVehiculo(this);
+        if (conductor != null && conductor.getVehiculo() != this) {
+            conductor.setVehiculo(this);
         }
     }
+
 
     @Override
     public String toString() {

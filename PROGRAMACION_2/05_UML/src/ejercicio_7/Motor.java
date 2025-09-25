@@ -23,10 +23,6 @@ public class Motor {
         return vehiculo;
     }
 
-    // package-private: manejado por Vehiculo para mantener bidireccionalidad
-    void setVehiculo(Vehiculo vehiculo) {
-        this.vehiculo = vehiculo;
-    }
 
     @Override
     public String toString() {

@@ -23,9 +23,13 @@ public class Titular {
         return pasaporte;
     }
 
-    // establecer asociación desde el lado del Titular
+    // establecer asociación desde el lado del Titular tambien
     void setPasaporte(Pasaporte pasaporte) {
         this.pasaporte = pasaporte;
+        if (pasaporte != null && pasaporte.getTitular() != this){
+            pasaporte.setTitular(this); 
+        }
+           
     }
 
     @Override

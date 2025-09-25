@@ -8,10 +8,9 @@ public class Libro {
     // agregación: Libro -> Editorial
     private Editorial editorial;
 
-    public Libro(String titulo, int isbn, Autor autor, Editorial editorial) {
+    public Libro(String titulo, int isbn, Editorial editorial) {
         this.titulo = titulo;
         this.isbn = isbn;
-        this.autor = autor;
         this.editorial = editorial;
     }
 
@@ -25,6 +24,10 @@ public class Libro {
 
     public Autor getAutor() {
         return autor;
+    }
+    
+    public void setAutor(Autor autor) {
+        this.autor = autor;
     }
 
     public Editorial getEditorial() {

@@ -9,7 +9,10 @@ public class ejercicio_3 {
         Editorial editorial = new Editorial("Editorial ABC", "Calle Falsa 123");
 
         // (Se crea el Libro referenciando Autor y Editorial)
-        Libro libro = new Libro("Cien Años de Soledad", 123456, autor, editorial);
+        Libro libro = new Libro("Cien Años de Soledad", 123456,  editorial);
+        
+        // corrección, se asocia el autor al libro
+        libro.setAutor(autor);
 
         // Comprobaciones minimas 
         System.out.println(libro);

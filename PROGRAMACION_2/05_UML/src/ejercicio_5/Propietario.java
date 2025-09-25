@@ -22,9 +22,12 @@ public class Propietario {
         return computadora;
     }
 
-    // package-private: controlamos la bidireccionalidad desde Computadora
+    // correccion de bidireccionalidad
     void setComputadora(Computadora computadora) {
         this.computadora = computadora;
+        if(computadora != null && computadora.getPropietario() != this){
+            computadora.setPropietario(this);
+        }
     }
 
     @Override

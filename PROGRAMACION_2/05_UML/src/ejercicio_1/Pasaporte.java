@@ -8,10 +8,12 @@ public class Pasaporte {
     // asociación bidireccional con Titular
     private Titular titular;
 
-    public Pasaporte(String numero, String fechaEmision, Foto foto) {
+    public Pasaporte(String numero, String fechaEmision, String foto, String formato) {
         this.numero = numero;
         this.fechaEmision = fechaEmision;
-        this.foto = foto;
+        
+        // Composicion, la clase contenedora crea el objeto contenido
+        this.foto = new Foto(foto, formato);
     }
 
     public String getNumero() {

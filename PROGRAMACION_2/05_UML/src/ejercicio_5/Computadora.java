@@ -26,6 +26,10 @@ public class Computadora {
     public PlacaMadre getPlacaMadre() {
         return placaMadre;
     }
+    
+    public void setPlacaMadre(PlacaMadre placaMadre){
+        this.placaMadre = placaMadre;
+    }
 
     public Propietario getPropietario() {
         return propietario;

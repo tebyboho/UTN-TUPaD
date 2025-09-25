@@ -22,9 +22,12 @@ public class Cliente {
         return tarjeta;
     }
 
-    // package-private: controlamos la bidireccionalidad desde TarjetaDeCredito
+    // correccion, aca se establece la bidireccionalidad tambien para evitar bucles
     void setTarjeta(TarjetaDeCredito tarjeta) {
         this.tarjeta = tarjeta;
+        if (tarjeta != null && tarjeta.getCliente() != this){
+            tarjeta.setCliente(this);
+        }
     }
 
     @Override

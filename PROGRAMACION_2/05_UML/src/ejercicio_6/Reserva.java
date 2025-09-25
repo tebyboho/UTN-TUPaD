@@ -8,10 +8,9 @@ public class Reserva {
     // agregación: Reserva -> Mesa
     private Mesa mesa;
 
-    public Reserva(String fecha, String hora, Cliente cliente, Mesa mesa) {
+    public Reserva(String fecha, String hora, Mesa mesa) {
         this.fecha = fecha;
         this.hora = hora;
-        this.cliente = cliente;
         this.mesa = mesa;
     }
 
@@ -26,11 +25,19 @@ public class Reserva {
     public Cliente getCliente() {
         return cliente;
     }
+    
+    public void setCliente(Cliente cliente){
+        this.cliente = cliente;
+    }
 
     public Mesa getMesa() {
         return mesa;
     }
-
+    
+    // fix de relacion
+    public void setMesa(Mesa mesa){
+        this.mesa = mesa;
+    }
     @Override
     public String toString() {
         return "Reserva[fecha=" + fecha + ", hora=" + hora + ", cliente=" + cliente + ", mesa=" + mesa + "]";
